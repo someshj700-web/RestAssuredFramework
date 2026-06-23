@@ -8,6 +8,7 @@
 
         <packages>
             <package name="test_folder"></package>
+            <package name="TestClass"></package>
         </packages>
 
     </test>
