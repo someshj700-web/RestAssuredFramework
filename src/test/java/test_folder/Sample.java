@@ -1,5 +1,6 @@
 package test_folder;
 
+import Util.HeaderUtils;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
 import org.testng.Assert;
@@ -28,7 +29,7 @@ public class Sample {
 
        given()
                .baseUri("https://jsonplaceholder.typicode.com")
-               .header("Content-Type","application/json")
+               .headers(HeaderUtils.getCommonHeaders())
                .body(data)
                .when()
                .post("/todos")

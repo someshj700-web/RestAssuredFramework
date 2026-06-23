@@ -8,7 +8,7 @@ import java.io.File;
 import java.util.HashMap;
 import java.util.Map;
 
-import static base_folder.BaseClass.getRequestSpec;
+
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.Matchers.*;
