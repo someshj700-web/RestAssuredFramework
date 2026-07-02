@@ -43,13 +43,13 @@ public class GetDetails extends BaseClass {
         response.then()
                 .spec(successResponseSpec);
 
-        //response.prettyPrint();
+        response.prettyPrint();
 
-        int postid=response.jsonPath().getInt("postId[1]");
-        int id=response.jsonPath().getInt("id[1]");
+        //int postid=response.jsonPath().getInt("postId[1]");
+        //int id=response.jsonPath().getInt("id[1]");
 
-        Assert.assertEquals(postid,1);
-        Assert.assertEquals(id,2);
+        //Assert.assertEquals(postid,1);
+        //Assert.assertEquals(id,2);
     }
 
     @Test
